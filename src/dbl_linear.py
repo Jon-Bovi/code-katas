@@ -11,7 +11,6 @@ def dbl_linear(n):
         u.pop(0)
         u = sorted(list(set(u)))[:n + 1]
         en -= 1
-        print(u)
     return u[0]
 
 
