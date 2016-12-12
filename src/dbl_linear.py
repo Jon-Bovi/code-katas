@@ -1,25 +1,18 @@
 """Module with dbl_linear function."""
-from collections import *
+from collections import deque
 
 
 def dbl_linear(n):
     """Return number from dbl_linear list at index."""
     u = [1]
-    b = 1
-    total = 1
-    two = 2
-    count = 1
-    while total < n:
-        total += two
-        two *= 2
-        count += 1
-    for x in range(count):
-        t = u[:]
-        for i in range(-b, 0):
-            u.extend([t[i] * 2 + 1, t[i] * 3 + 1])
-        b *= 2
-    a = sorted(list(set(u)))
-    return a[n]
+    en = n
+    while en > 0:
+        u.extend([u[0] * 2 + 1, u[0] * 3 + 1])
+        u.pop(0)
+        u = sorted(list(set(u)))[:n + 1]
+        en -= 1
+        print(u)
+    return u[0]
 
 
 def dbl_linear0(n):
@@ -41,5 +34,8 @@ def dbl_linear0(n):
 
 
 def com():
+    """Helper to compare my function to the kata creator's function."""
     for i in range(500):
-        print(i, dbl_linear(i), dbl_linear0(i))
+        a = dbl_linear(i)
+        b = dbl_linear0(i)
+        print(i, a, b, a == b)
