@@ -65,7 +65,6 @@ def DNA_strand(dna):
 - __Link:__ https://www.codewars.com/kata/twice-linear
 
 ```
-I don't have access to any solutions, but I have reason to believe that the
-function the creator used to test my function is wrong. Our functions diverge
-(and actually converge again...) at n=230. His skips 1279 which should be there.
+My function works but it gets VERY slow if you try to get a large index (>1000).
+It fails the codewars test because of this.
 ```
