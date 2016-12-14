@@ -16,7 +16,8 @@ setup(
                 "bit_counting",
                 "dubstep_decoder",
                 "rna",
-                "dbl_linear"],
+                "dbl_linear",
+                "sum_terms"],
     extras_require={
         "test": ["pytest", "pytest-cov", "tox"]
     }
