@@ -68,3 +68,13 @@ def DNA_strand(dna):
 My function works but it gets VERY slow if you try to get a large index (>1000).
 It fails the codewars test because of this.
 ```
+
+### Proper Parenthetics
+- __Module:__ parenthetics.py
+- __Function__: proper_parenthetics(some_string)
+    - Return 1 if there are open parentheses left unclosed
+    - Return 0 if open and close parentheses balance
+    - Return -1 if closing parentheses are not preceded by matching open parentheses
+- __Tests:__ test_parenthetics.py
+- __Implementation__: Stack data structure tracks balance of opening to closing
+parentheses. Stack was implemented in collaboration with Casey O'Kane.
