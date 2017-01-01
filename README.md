@@ -1,5 +1,13 @@
 # code-katas
 
+### Sort Deck of Cards (7 kyu)
+- __Module:__ sort_cards.py
+- __Functions__:
+    - sort_cards: sorts list of cards using list comprehenshion 'sorted' builtin
+    - sort_cards_pq: sorts list of cards using a priority queue
+- __Tests:__ test_sort_cards.py
+- __Link:__ https://www.codewars.com/kata/sort-deck-of-cards/
+
 ### Fizz Buzz Cuckoo Clock (7 kyu)
 - __Module:__ fizzbuzz.py
 - __Tests:__ test_fizzbuzz.py
